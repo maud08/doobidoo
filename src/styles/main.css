@@ -1,0 +1,100 @@
+@keyframes turn {
+    from {
+        transform-origin: 0% 50%;
+        transform: perspective(200px) rotateY(90deg);
+    }
+    to {
+        
+        transform-origin: 50% 50%;
+        transform: perspective(0px) rotateY(0deg);
+    }
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    background: url(../assets/img/background.svg) no-repeat center fixed;
+    background-size: cover;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../assets/img/guirlande.svg) no-repeat top fixed;
+    background-size: cover;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.company__container{
+    font-family: 'Libre Franklin', sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5vw;
+    max-width: 35%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.company__container li{
+        padding: 0 2vw 0 0;
+        border-right: 3px solid;
+}
+
+.company__container li:last-child{
+    padding: 0;
+    border: none;
+}
+
+.soon__container {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.soon__content{
+    text-transform: uppercase;
+    font-size: 8vw;
+    text-align: center;
+    margin: 8vw 0 0 0;
+}
+
+.soo__text{
+    display: inline-block;
+    width: 10vw;
+    height: 10vw;
+    animation: turn 3s ease;
+
+}
+
+._3{
+    background: url(../assets/img/scrable_3.svg) no-repeat;
+    background-size: cover;
+}
+
+._1{
+    background: url(../assets/img/scrable_1.svg) no-repeat;
+    background-size: cover;
+}
+
+.soon__container > span {
+    font-size: 2.2vw;
+    margin: 2vw 0 0 10.25vw;
+    display: inline-block;
+}
+
+.footer__icon {
+    display: flex;
+    justify-content: center;
+    margin: 12vw 0 0 0;
+}
+
+.footer__icon a {
+    width: 4vw;
+    padding: 0 2vw;
+}
