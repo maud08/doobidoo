@@ -1,3 +1,7 @@
+@import url("./mobile.css") screen and (min-width: 480px) and (max-width: 1200px);
+@import url("./desktops.css") screen and (min-width: 1200px);
+
+
 @keyframes turn {
     from {
         transform-origin: 0% 50%;
@@ -13,8 +17,7 @@
 html{
     margin: 0;
     padding: 0;
-    background: url(../assets/img/background.svg) no-repeat center fixed;
-    background-size: cover;
+    height: 100%;
 }
 
 body{
@@ -22,6 +25,7 @@ body{
     padding: 0;
     background: url(../assets/img/guirlande.svg) no-repeat top fixed;
     background-size: cover;
+    height: 100%;
 }
 
 main{
@@ -33,22 +37,24 @@ main{
     font-family: 'Libre Franklin', sans-serif;
     list-style: none;
     display: flex;
-    justify-content: space-between;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 1.5vw;
-    max-width: 35%;
-    margin: 0 auto;
     padding: 0;
 }
 
+
+
 .company__container li{
-        padding: 0 2vw 0 0;
+        padding: 0 2vw;
         border-right: 3px solid;
 }
 
+.company__container li:first-child{
+    padding: 0 2vw 0 0;
+}
+
 .company__container li:last-child{
-    padding: 0;
+    padding: 0 0 0 2vw;
     border: none;
 }
 
@@ -59,15 +65,12 @@ main{
 
 .soon__content{
     text-transform: uppercase;
-    font-size: 8vw;
     text-align: center;
-    margin: 8vw 0 0 0;
+    margin: 5vw 0 0 0;
 }
 
 .soo__text{
     display: inline-block;
-    width: 10vw;
-    height: 10vw;
     animation: turn 3s ease;
 
 }
@@ -83,18 +86,38 @@ main{
 }
 
 .soon__container > span {
-    font-size: 2.2vw;
-    margin: 2vw 0 0 10.25vw;
     display: inline-block;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 .footer__icon {
     display: flex;
     justify-content: center;
-    margin: 12vw 0 0 0;
 }
 
-.footer__icon a {
-    width: 4vw;
-    padding: 0 2vw;
+.info__mail{
+    background: #000000;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Lato', sans-serif;
+    margin: 1vw auto 0;
+    text-align: center;
+    padding: 1vw 1.5vw;
+}
+
+.info__mail:hover{
+    background: #E5CE9D;
+}
+
+.info__mail a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.info__mail:hover a{
+    color: #000000;
 }

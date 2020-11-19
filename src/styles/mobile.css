@@ -1,0 +1,34 @@
+.logo {
+    max-width: 50%;
+    margin: 26vw auto auto;
+}
+
+.company__container{
+    justify-content: center;
+    font-size: 3vw;
+    margin: 15vw auto;
+}
+
+.soon__content {
+    font-size: 9vw;
+}
+
+.soo__text {
+    width: 12vw;
+    height: 12vw;
+}
+
+.soon__container > span {
+    font-size: 4.75vw;
+    margin: 16vw 0 0 0;
+    text-align: center;
+}
+
+.footer__icon a {
+    width: 10vw;
+}
+
+.info__mail{
+    max-width: 50%;
+    font-size: 4.5vw;
+}
