@@ -1,3 +1,7 @@
+main {
+    margin: 0 2.5vw;
+}
+
 .logo {
     max-width: 50%;
     margin: 26vw auto auto;
@@ -14,14 +18,15 @@
 }
 
 .soo__text {
-    width: 12vw;
-    height: 12vw;
+    width: 11vw;
+    height: 11vw;
 }
 
 .soon__container > span {
-    font-size: 4.75vw;
-    margin: 16vw 0 0 0;
+    font-size: 4vw;
+    margin: 8vw 5vw;
     text-align: center;
+    max-width: 90vw;
 }
 
 .footer__icon a {
